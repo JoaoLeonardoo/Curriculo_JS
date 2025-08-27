@@ -1,5 +1,5 @@
 const data = {
-    name: "João Leonardo RS",
+    name: "João Leonardo R.S",
     contact: {
         city: "Fortaleza, CE",
         phone: "+55 85 9 9602-4008",
