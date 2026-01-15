@@ -125,7 +125,7 @@
         }
         
         .item-details.active {
-            max-height: 500px; /* Valor grande o suficiente para acomodar o conteúdo */
+            max-height: 800px; 
             padding: 15px;
         }
 
@@ -156,16 +156,6 @@
             font-size: clamp(0.8em, 1.8vw, 0.9em);
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-
-        .item-toggle-icon {
-            font-size: 1.5em;
-            transform: rotate(0deg);
-            transition: transform 0.3s ease;
-        }
-
-        .item-toggle-icon.rotated {
-            transform: rotate(180deg);
-        }
     </style>
 </head>
 <body>
@@ -175,142 +165,125 @@
             <p>Fortaleza, CE | +55 85 9 9602-4008 | jotaleo.ce3@gmail.com</p>
             <div class="contact-info">
                 <a href="https://linkedin.com/in/jl-rodrigues/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/loaoLeonardoo" target="_blank">GitHub</a>
             </div>
         </div>
 
         <div class="section">
             <h2 class="section-title">Objetivo Profissional</h2>
             <p>
-                Buscando uma oportunidade como **estagiário de desenvolvimento** para aplicar e expandir meus conhecimentos práticos em **Python, JavaScript e C**, adquiridos em projetos acadêmicos e experiências de freelancing. Tenho interesse em contribuir com minha proatividade e habilidades de resolução de problemas, aprendendo com uma equipe de desenvolvimento experiente para criar soluções inovadoras.
+                Atualmente atuando como **Desenvolvedor de Sistemas na Funcap**, busco consolidar minha carreira na área de tecnologia aplicando conceitos de **Engenharia de Computação**. Tenho foco em desenvolvimento de soluções escaláveis utilizando **Python e JavaScript**, integração de dados e automação de processos, visando sempre a eficiência técnica e a inovação.
             </p>
         </div>
 
         <div class="section" id="experience-section">
             <h2 class="section-title">Experiência</h2>
-            <!-- Experiências serão inseridas aqui pelo JS -->
         </div>
 
         <div class="section" id="education-section">
             <h2 class="section-title">Formação</h2>
-            <!-- Formações serão inseridas aqui pelo JS -->
         </div>
         
         <div class="section" id="skills-section">
             <h2 class="section-title">Competências</h2>
-            <ul class="skills-list">
-                <!-- Competências serão inseridas aqui pelo JS -->
-            </ul>
+            <ul class="skills-list"></ul>
         </div>
         
         <div class="section" id="courses-section">
             <h2 class="section-title">Cursos e Certificações</h2>
-            <ul class="courses-list">
-                <!-- Cursos e certificações serão inseridos aqui pelo JS -->
-            </ul>
+            <ul class="courses-list"></ul>
         </div>
     </div>
 
     <script>
         const data = {
-            name: "João Leonardo RS",
-            contact: {
-                city: "Fortaleza, CE",
-                phone: "+55 85 9 9602-4008",
-                email: "jotaleo.ce3@gmail.com",
-                linkedin: "https://linkedin.com/in/jl-rodrigues/"
-            },
-            summary: "Estudante de Engenharia de Computação no Instituto Federal do Ceará, com experiência em desenvolvimento de automações, integração de sistemas e gestão de projetos. Possuo um perfil proativo e colaborativo, com habilidades comprovadas em Python, JavaScript, C e metodologias ágeis. Busco uma oportunidade para aplicar meu conhecimento técnico e minhas competências de liderança.",
             experience: [
                 {
-                    title: "Desenvolvedor Frontend (Freelance)",
-                    company: "Site de Academia",
-                    period: "Julho de 2025 - Presente",
+                    title: "Desenvolvedor de Sistemas",
+                    company: "Funcap",
+                    period: "SETEMBRO DE 2025 - ATUAL",
                     details: [
-                        "Desenvolvimento de funcionalidades para aplicações web, com interface e interatividade criadas do zero utilizando HTML5, CSS3 e JavaScript.",
-                        "Manutenção e correção de bugs, garantindo a integração sem conflitos com serviços externos (WhatsApp e Google Maps).",
-                        "Participação em todas as fases do projeto, desde a concepção do design (UX/UI) até a implementação e publicação.",
-                        "Colaboração com o cliente, traduzindo necessidades de negócio em soluções de código."
+                        "Apoio no desenvolvimento de soluções para integração entre Excel e R, utilizando APIs e JavaScript.",
+                        "Participação na definição de aplicações com fluxo de atualização automática baseada em dados hospedados na web.",
+                        "Contribuição para testes, organização e validação de planilhas destinadas a pesquisadores da área de economia.",
+                        "Otimização de processos através de scripts para tratamento e análise de grandes bases de dados."
+                    ]
+                },
+                {
+                    title: "Desenvolvedor Web (Freelance)",
+                    company: "Arena LM",
+                    period: "JULHO DE 2025 - NOVEMBRO 2025",
+                    details: [
+                        "Desenvolvimento da interface e interatividade de site institucional utilizando HTML5, CSS3 e JavaScript.",
+                        "Manutenção contínua do código e implementação de melhorias de performance.",
+                        "Atuação em todas as fases: desde a concepção UX/UI até a publicação final.",
+                        "Tradução de necessidades de negócio em soluções de código personalizadas."
                     ]
                 },
                 {
                     title: "Estagiário de TI",
-                    company: "Grupo energy telecom",
+                    company: "Grupo Energy Telecom",
                     period: "AGOSTO DE 2024 - JANEIRO DE 2025",
                     details: [
                         "Elaboração de automações de atividades de rotina com Python e PowerShell.",
                         "Apoio no levantamento de requisitos técnicos e elaboração de propostas comerciais.",
-                        "Suporte na análise de soluções em infraestrutura de rede, data center e cibersegurança.",
-                        "Apoio à equipe na organização de documentos técnicos e materiais de pré-vendas."
+                        "Suporte na análise de infraestrutura de rede, data center e cibersegurança.",
+                        "Organização de documentos técnicos e suporte à equipe de pré-vendas."
                     ]
                 },
                 {
-                    title: "Designer de conteúdo e desenvolvedor",
+                    title: "Designer e Desenvolvedor",
                     company: "Library&Cat",
                     period: "MARÇO DE 2023 - DEZEMBRO DE 2024",
                     details: [
-                        "Desenvolvimento e diagramação de site institucional (Google Sites).",
-                        "Personalização de layouts e melhoria da experiência do usuário.",
-                        "Criação e tratamento de imagens, banners e elementos visuais.",
-                        "Colaboração na gestão e identidade visual do Instagram oficial.",
-                        "Utilização de ferramentas: WordPress, Photoshop, Illustrator, Canvas, Trello.",
-                        "Conhecimento de startups e metodologias ágeis."
-                    ]
-                },
-                {
-                    title: "Coordenador de equipes",
-                    company: "BJ TECH",
-                    period: "AGOSTO DE 2022 - JUNHO DE 2024",
-                    details: [
-                        "Coordenação de equipe de suporte técnico voluntário em hardware e software.",
-                        "Organização das demandas de manutenção e atendimento a usuários.",
-                        "Apoio em diagnósticos e soluções para computadores, notebooks e tablets.",
-                        "Desenvolvimento de habilidades de liderança, comunicação e gestão de equipe."
+                        "Desenvolvimento e diagramação de site institucional.",
+                        "Personalização de layouts e melhoria da experiência do usuário (UX).",
+                        "Criação e tratamento de elementos visuais e banners promocionais.",
+                        "Aplicação de metodologias ágeis no fluxo de trabalho da startup."
                     ]
                 }
             ],
             education: [
                 {
-                    institution: "Instituto Federal de Educação, Ciência e Tecnologia do Ceará",
+                    institution: "Instituto Federal do Ceará (IFCE)",
                     degree: "Bacharelado em Engenharia de Computação",
-                    period: "JANEIRO DE 2025 - JANEIRO DE 2030",
+                    period: "JANEIRO DE 2025 - ATUAL",
                     details: [
-                        "Em um dos cursos mais concorridos do Ceará, estou aprendendo a desenvolver aplicações e soluções tecnológicas através de projetos práticos e vivências reais.",
-                        "A grade curricular abrange desde a teoria da computação até o desenvolvimento de hardware e software, preparando para os desafios do mercado, com ênfase em banco de dados relacionais e sistemas distribuídos."
+                        "Foco em arquitetura de computadores, algoritmos avançados e sistemas embarcados.",
+                        "Desenvolvimento de projetos práticos em C e Python aplicados à engenharia."
                     ]
                 },
                 {
-                    institution: "Universidade Federal do Ceará",
-                    degree: "Curso de Extensão: Desenvolvimento de Aplicações",
-                    period: "JANEIRO DE 2024 - JANEIRO DE 2025",
+                    institution: "Universidade Federal do Ceará (UFC)",
+                    degree: "Extensão: Desenvolvimento de Aplicações com Python",
+                    period: "2024 - 2025",
                     details: [
-                        "Durante este curso de extensão, adquiri e aprimorei meus conhecimentos em desenvolvimento de aplicações, com foco prático na linguagem de programação Python e suas principais bibliotecas."
+                        "Aprimoramento em bibliotecas de análise de dados e frameworks web."
                     ]
                 },
                 {
                     institution: "EEEP Ícaro De Sousa Moreira",
-                    degree: "Técnico Profissionalizante: Redes de Computadores",
-                    period: "JANEIRO DE 2022 - JANEIRO DE 2025",
+                    degree: "Técnico em Redes de Computadores",
+                    period: "2022 - 2025",
                     details: [
-                        "Neste curso técnico, obtive uma base sólida em infraestrutura de redes, configuração de equipamentos, segurança cibernética e manutenção de sistemas.",
-                        "Aprendi a diagnosticar problemas e implementar soluções eficazes em ambientes de rede, com conhecimentos práticos em banco de dados relacionais para gerenciamento de dados de rede."
+                        "Base sólida em protocolos de rede, segurança e manutenção de hardware."
                     ]
                 }
             ],
             skills: [
-                "Desenvolvimento de automações com Python, JavaScript e C",
-                "Conhecimentos de Git e GitHub",
-                "Integração de backend e frontend",
-                "Criação de conteúdos para Instagram, Facebook, TikTok e LinkedIn",
-                "Edição de vídeos em CapCut e imagens em Canvas",
-                "Organização de postagens e interação com público",
-                "Boa escrita, criatividade e comunicação digital"
+                "Python (Automação e Integração)",
+                "JavaScript / HTML5 / CSS3",
+                "Integração de APIs e R",
+                "Git & GitHub",
+                "Metodologias Ágeis",
+                "UX/UI Design",
+                "Infraestrutura de Redes"
             ],
             courses: [
                 "ORACLE - JavaScript",
-                "ORACLE JAVASCRIPT COM HTML",
-                "AWS ACADEMY - AWS CLOUD FOUNDATIONS",
-                "SEBRAE - MARKETING DIGITAL",
-                "GRUPO VOITTO - POWER BI APLICADO A NEGÓCIOS"
+                "AWS Academy - Cloud Foundations",
+                "Marketing Digital - SEBRAE",
+                "Power BI - Grupo Voitto"
             ]
         };
 
@@ -320,12 +293,9 @@
             const skillsList = document.querySelector('.skills-list');
             const coursesList = document.querySelector('.courses-list');
 
-            // Função para renderizar as seções colapsáveis
             const renderSection = (items, parentElement, isExperience = false) => {
-                items.forEach((item, index) => {
+                items.forEach((item) => {
                     const itemContainer = document.createElement('div');
-                    itemContainer.classList.add(isExperience ? 'experience-item' : 'education-item');
-
                     const header = document.createElement('div');
                     header.classList.add('item-header');
                     
@@ -335,14 +305,14 @@
                     header.innerHTML = `
                         <div>
                             <h3>${itemTitle}</h3>
-                            <p>${itemSubtitle}</p>
+                            <p><strong>${itemSubtitle}</strong></p>
                         </div>
                         <span>${item.period}</span>
                     `;
 
                     const details = document.createElement('div');
                     details.classList.add('item-details');
-                    if (item.details && item.details.length > 0) {
+                    if (item.details) {
                         const ul = document.createElement('ul');
                         item.details.forEach(detail => {
                             const li = document.createElement('li');
@@ -362,7 +332,6 @@
                 });
             };
             
-            // Função para renderizar listas simples de itens
             const renderList = (items, parentElement, itemClass) => {
                 items.forEach(item => {
                     const li = document.createElement('li');
@@ -372,7 +341,6 @@
                 });
             };
 
-            // Renderiza as seções
             renderSection(data.experience, experienceSection, true);
             renderSection(data.education, educationSection, false);
             renderList(data.skills, skillsList, 'skill-item');
