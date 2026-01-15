@@ -27,8 +27,6 @@ O objetivo foi demonstrar minhas habilidades iniciais em **Desenvolvimento Web F
 - **JavaScript (Vanilla):** Lógica de manipulação do DOM para criar a interatividade das seções.
 - **Google Fonts:** Integração da família tipográfica *Inter*.
 
-## 📈 Experiência Recente Destacada
-Recentemente, incluí minha atuação como **Desenvolvedor de Sistemas na Funcap**, onde trabalho com integração de APIs, JavaScript e tratamento de grandes bases de dados.
 
 ---
 <p align="center"> 
